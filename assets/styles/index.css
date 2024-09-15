@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
-
+::-webkit-scrollbar {
+  display: none;
+}
 *{
+  
   margin: 0;
   padding: 0;
   list-style: none;
@@ -19,13 +22,13 @@ body{
   height: 60px;
   display: flex;
   position: fixed;
-  top: 10px;
+  top: 0;
 }
 
 .wrapper .top_navbar .hamburger{
   width: 70px;
   height: 100%;
-  background: #2e4ead;
+  background: #251C1C;
   padding: 15px 17px;
   border-top-left-radius: 20px;
   cursor: pointer;
@@ -34,7 +37,7 @@ body{
 .wrapper .top_navbar .hamburger div{
   width: 35px;
   height: 4px;
-  background: #92a6e2;
+  background: #80ED99;
   margin: 5px 0;
   border-radius: 5px;
 }
@@ -42,7 +45,7 @@ body{
 .wrapper .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
-  background: #fff;
+  background: #251C1C;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -52,7 +55,7 @@ body{
 }
 
 .wrapper .top_navbar .top_menu .logo{
-  color: #2e4ead;
+  color: #80ED99;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -69,13 +72,13 @@ body{
   height: 35px;
   line-height: 35px;
   text-align: center;
-  border: 1px solid #2e4ead;
+  border: 1px solid #80ED99;
   border-radius: 50%;
-  color: #2e4ead;
+  color: #80ED99;
 }
 
 .wrapper .top_navbar .top_menu ul li a:hover{
-  background: #4360b5;
+  background: #80ED99;
   color: #fff;
 }
 
@@ -85,9 +88,9 @@ body{
 
 .wrapper .sidebar{
   position: fixed;
-  top: 70px;
+  top: 60px;
   left: 10px;
-  background: #80ED99;
+  background: #251C1C;
   width: 200px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
@@ -100,7 +103,7 @@ body{
     color: #F4F4F9;
     position: relative;
     margin-bottom: 1px;
-    color: #92a6e2;
+    color: #80ED99;
     white-space: nowrap;
 }
 
@@ -126,7 +129,7 @@ body{
 
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active{
-  background: #4360b5;
+  background: #80ED99;
   color: #fff;
 }
 
@@ -145,6 +148,7 @@ body{
 
 .wrapper .main_container .item{
   background: #fff;
+  border-radius: 10px;
   margin-bottom: 10px;
   padding: 15px;
   font-size: 14px;
@@ -170,4 +174,96 @@ body{
 .wrapper.collapse .main_container{
   width: (100% - 70px);
   margin-left: 70px;
+}
+
+#logoLink{
+  color: inherit;
+  text-decoration: none;
+}
+#logoLink:hover {
+  color: inherit;
+  text-decoration: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Catalog Container */
+#catalog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1%;
+}
+
+/* Catalog Cards */
+.card{
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* View Catalog Styles */
+#catalogDetails{
+  width: 65%;
+  float: left;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 1%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#catalogDetails img{
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  max-width: 500px;
+  display: block;
+  object-fit: cover;
+}
+#profileContainer{
+float: right;
+width: 30%;
+margin-top: 1%;
+border-radius: 20px;
+padding: 10px;
+background-color: #fff;
+}
+#profile{
+  text-align: center;
+  align-items: center;
+}
+#profile img{
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+#moreProductsContainer{
+  margin-top: 1%;
+  width: 30%;
+  float: right;
+}
+#moreProducts{
+  width: 30%;
+  margin-top: 1%;
 }

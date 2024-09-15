@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-$sql = "SELECT * FROM product ORDER BY plantid DESC LIMIT 4";
+$sql = "SELECT * FROM product ORDER BY plantid DESC";
 $result = $connect->query($sql);
 
 // Check if records exist
@@ -20,10 +20,11 @@ if ($result->num_rows > 0) {
             $image = 'placeholder.jpg'; // Replace 'placeholder.jpg' with the path to your placeholder image
         }
         // Display product information
-        echo '<div class="card">';
+        echo '<div class="card" data-plantid="' . $row['plantid'] . '">';
         echo '<img src="assets/images/img1/' . $image . '" alt="Product Image">';
         echo '<div class="card-content">';
         echo '<h2>' . $row['plantname'] . '</h2>';
+        echo '<p>'. $row['details'] . '<p>';
         echo '</div>';
         echo '</div>';
     }
