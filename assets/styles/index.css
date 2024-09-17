@@ -12,7 +12,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-  background: #e1ecf2;
+  background: #FEFAE0;
 }
 .wrapper{
   margin: 10px;
@@ -72,7 +72,7 @@ body{
   height: 35px;
   line-height: 35px;
   text-align: center;
-  border: 1px solid #80ED99;
+  border: 1px solid #4FB477;
   border-radius: 50%;
   color: #80ED99;
 }
@@ -90,7 +90,7 @@ body{
   position: fixed;
   top: 60px;
   left: 10px;
-  background: #251C1C;
+  background: #1B1113;
   width: 200px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
@@ -147,7 +147,7 @@ body{
 }
 
 .wrapper .main_container .item{
-  background: #fff;
+  background: #F7FFF7;
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 15px;
@@ -199,7 +199,7 @@ a {
 /* Catalog Cards */
 .card{
   width: 500px;
-  background-color: #fff;
+  background-color: #FDFFFC;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
